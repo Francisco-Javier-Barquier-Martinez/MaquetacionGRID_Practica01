@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <meta name="author" content="Francisco Javier Barquier Martinez">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Langar&family=Yanone+Kaffeesatz:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+    <title>maquetacionGRID_Practica01FranciscoJavierBarquierMartinez</title>
+</head>
+
+<style>
+    * {
+        margin: 1vh;
+        text-align: center;
+        grid-template-areas: "head head"
+            "nav  nav"
+            "main  main"
+            "footer footer";
+    }
+
+    header,
+    nav {
+        font-family: 'Langar', cursive;
+    }
+
+    header {
+        grid-column: 1 / span 3;
+        grid-row: 1;
+        height: 10vh;
+        grid-area: head;
+    }
+
+    nav {
+        grid-area: nav;
+        grid-column: 1 / span 3;
+        grid-row: 2;
+        height: 10vh;
+        border-radius: 10px;
+
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0px;
+        z-index: 10;
+    }
+
+    nav a {
+        color: black;
+        font-size: 3vh;
+        font: bold;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 1vh;
+        width: 60px;
+    }
+
+    article {
+        border-radius: 10px;
+    }
+
+    p {
+        font-family: 'Langar', cursive;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+    }
+
+    main {
+        grid-area: main;
+        padding: 2vh;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+
+    }
+
+    footer {
+        grid-area: footer;
+        grid-column: 1 / span 3;
+        grid-row: 4;
+        height: 10vh;
+        border-radius: 10px;
+    }
+
+    footer a {
+        font: bold;
+        font-size: 5vh;
+    }
+
+    .fa-instagram-square {
+        color: rgb(204, 48, 48);
+    }
+
+    .fa-facebook-square {
+        color: rgb(77, 77, 231);
+    }
+
+    .fa-snapchat-square {
+        color: yellow;
+    }
+</style>
+
+<body>
+    <!----Francisco Javier Barquier Martínez-->
+    <div class="container">
+        <header>
+            <h1>Cabecera de la Página Web</h1>
+        </header>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Categorías</a>
+            <a href="#">Información</a>
+            <a href="#">Galería</a>
+            <a href="#">Contacta</a>
+        </nav>
+        <main>
+            <article>
+                <img src="img/uno.jfif">
+            </article>
+            <article>
+                <img src="img/dos.jfif">
+            </article>
+            <article>
+                <img src="img/tres.jfif">
+            </article>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolorum dolorem illum
+                voluptatibus a necessitatibus accusamus ratione atque! Velit tenetur sint inventore quisquam cumque
+                amet expedita aliquam aperiam debitis. Animi!1
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolorum dolorem illum
+                voluptatibus a necessitatibus accusamus ratione atque! Velit tenetur sint inventore quisquam cumque
+                amet expedita aliquam aperiam debitis. Animi!2
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolorum dolorem illum
+                voluptatibus a necessitatibus accusamus ratione atque! Velit tenetur sint inventore quisquam cumque
+                amet expedita aliquam aperiam debitis. Animi!3
+            </p>
+        </main>
+
+        <footer>
+            <div class="copyright">
+                <p>Todos los derechos reservados a Francisco Javier Barquier Martinez</p>
+            </div>
+            <div class="social">
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-snapchat-square"></i></a>
+            </div>
+        </footer>
+    </div>
+    <br>
+    <address>
+        <p>Francisco Javier Barquier Martinez</p>
+        <p>franciscobarquier@gmail.com</p>
+        <p>Almería</p>
+    </address>
+</body>
+
+</html>
